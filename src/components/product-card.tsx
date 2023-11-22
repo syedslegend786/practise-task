@@ -1,19 +1,15 @@
 "use client"
 
-import { useCart } from "@/hooks/useCart"
 import { TProductsWithVariants } from "@/types"
 import { URLS } from "@/utils/URLS"
-import { ShoppingCart } from "lucide-react"
 import Image from "next/image"
 import Link from "next/link"
 import React from "react"
-import { Button } from "./ui/button"
 
 type ProductCardProps = {
   product: TProductsWithVariants
 }
 export function ProductCard({ product }: ProductCardProps) {
-  const { setItems } = useCart()
   const image = product.variants[0].image
 
   return (
