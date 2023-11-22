@@ -22,7 +22,9 @@ export function ProductCard({ product }: ProductCardProps) {
           <Image src={image} alt="" className="object-cover" fill />
         </div>
         <div className="px-2 h-28 py-4">
-          <h3 className="font-semibold text-gray-900">{product.title}</h3>
+          <h3 className="font-semibold text-gray-900  line-clamp-1">
+            {product.title}
+          </h3>
           <p className="line-clamp-3 text-sm text-zinc-500">
             {product.description} adsf asd fasdf a asdfasdfasdfas adfasdf adf
             adfa df adfas asdf asdfadfasdf qerqwerqwerqwer qerqwer
