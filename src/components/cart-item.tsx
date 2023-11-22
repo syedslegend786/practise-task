@@ -25,7 +25,7 @@ export function CartItem({ item }: { item: TCartItems }) {
         <Image src={item.image} fill alt="" className="object-cover" />
       </div>
       <div className="space-y-1">
-        <h3 className="text-base font-semibold truncate">{item.title}</h3>
+        <h3 className="text-base font-semibold line-clamp-1">{item.title}</h3>
         <p className="text-xs font-semibold">Color: {item.color}</p>
         <div className="flex items-center gap-3">
           <p className="text-xs font-semibold">Variant:</p>
