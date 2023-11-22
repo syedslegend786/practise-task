@@ -1,5 +1,6 @@
 "use client"
 
+import { ScrollArea } from "@/components/ui/scroll-area"
 import {
   Sheet,
   SheetClose,
@@ -34,12 +35,15 @@ export function CartSheet() {
             <p className="text-sm font-semibold text-rose-500">Empty Cart.</p>
           </div>
         )}
-
-        <div className="grid gap-4 py-4">
-          {items.map((item) => (
-            <CartItem item={item} key={item.variantId} />
-          ))}
-        </div>
+        <ScrollArea className=" h-[90%] w-full space-y-4">
+          <div className="h-full space-y-4 mr-6 my-6">
+            {items.map((item) => (
+              // <div>
+              <CartItem item={item} key={item.variantId} />
+              // </div>
+            ))}
+          </div>
+        </ScrollArea>
       </SheetContent>
     </Sheet>
   )
