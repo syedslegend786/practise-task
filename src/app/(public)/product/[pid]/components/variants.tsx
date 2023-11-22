@@ -25,6 +25,7 @@ export function Variants({ data }: { data: TProductsWithVariants }) {
   function handleSelectVariant(variantId: string) {
     router.push(`${pathname}?variant=${variantId}`)
   }
+  console.log({ variantsData })
   return (
     <div>
       {Object.entries(variantsData).map(([key, value], index) => (

@@ -58,7 +58,7 @@ const CreateProduct = () => {
             continue
           }
           const tone = generateShades(
-            backendGeneratedColors[i],
+            backendGeneratedColors[j],
             Number(current.shade)
           )
           variants.push({
